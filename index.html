@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brahim LAGNAFDI | Digital Marketer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'custom-dark-bg': '#1e1e1e',
+            'custom-card-bg': '#2d2d2d',
+            'custom-accent': '#fec544', // Yellow accent
+            'custom-text-primary': '#c5c5c5', // Main light text
+            'custom-text-secondary': '#858585', // Darker/muted text
+            'custom-heading-text': '#ffffff', // White headings
+            'custom-border-color': '#404040', // Subtle borders
+          },
+          fontFamily: {
+            sans: ['Open Sans', 'sans-serif'],
+            poppins: ['Poppins', 'sans-serif'],
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 0.5s ease-out forwards',
+            'slide-in-left': 'slideInLeft 0.5s ease-out forwards',
+          },
+          keyframes: {
+            fadeInUp: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            slideInLeft: {
+              '0%': { opacity: '0', transform: 'translateX(-20px)' },
+              '100%': { opacity: '1', transform: 'translateX(0)' },
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #1e1e1e; /* custom-dark-bg */
+      color: #c5c5c5; /* custom-text-primary */
+      overflow-x: hidden; /* Prevent horizontal scroll */
+    }
+    /* Custom scrollbar for webkit browsers */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #2d2d2d; /* custom-card-bg */
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #fec544; /* custom-accent */
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #e8b436; /* Darker shade of custom-accent for hover */
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    .section-title-tag {
+      display: inline-block;
+      background-color: rgba(254, 197, 68, 0.1); /* custom-accent with low opacity */
+      color: #fec544; /* custom-accent */
+      padding: 2px 8px;
+      font-size: 0.75rem; /* 12px */
+      font-weight: 600;
+      border-radius: 4px;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem; /* 8px */
+      letter-spacing: 0.5px;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0"
+  }
+}
+</script>
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+</html><link rel="stylesheet" href="index.css">
+<script src="index.tsx" type="module"></script>
